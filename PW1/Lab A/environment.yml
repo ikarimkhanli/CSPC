@@ -1,7 +1,7 @@
-name:cspc
+name: cspc
 channels:
--conda-forge
+  - conda-forge
 dependencies:
--python=3.11
--numpy
--pytest
+  - python=3.11
+  - numpy
+  - pytest
