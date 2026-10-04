@@ -1,0 +1,12 @@
+rule all:
+    input:
+        "figure.png"
+
+rule make_figure:
+    input:
+        "decay_observed.csv",
+        "plot.py"
+    output:
+        "figure.png"
+    shell:
+        "python plot.py"

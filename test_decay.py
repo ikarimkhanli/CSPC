@@ -25,3 +25,15 @@ def test_starts_at_N0():
 #   Check that the simulation's AVERAGE over many seeds is close to the
 #   physical law  N0 * exp(-lam * t).
 #   Which pytest tool compares floating-point values with a tolerance?
+
+
+def test_negative_rate_raises_valueerror():
+    with pytest.raises(ValueError):
+        simulate(1000, -0.4)
+
+def test_average_decay_matches_theory():
+    N0 = 1000
+    r = 0.4
+    runs = [simulate(N0, r)[-1] for  _ in range(100)]
+    expected = N0 * np.exp(-r)
+    assert np.isclose(np.mean(runs), expected, atol=50)
