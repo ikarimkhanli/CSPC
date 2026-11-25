@@ -1,0 +1,12 @@
+Earthquake A
+  P arrival at 108.42 s, S arrival at 144.08 s (S-P = 35.66 s)
+  distance R = 306.1 km, origin time = 59.05 s
+  PGV = 1.510 cm/s, magnitude M = 6.66
+
+Earthquake B
+  P arrival at 84.25 s, S arrival at 102.43 s (S-P = 18.18 s)
+  distance R = 156.1 km, origin time = 59.08 s
+  PGV = 0.571 cm/s, magnitude M = 5.36
+
+Closer earthquake: B
+Stronger earthquake: A
